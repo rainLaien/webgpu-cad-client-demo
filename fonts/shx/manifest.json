@@ -1,0 +1,277 @@
+{
+  "fonts": [
+    {
+      "file": "@extfont2.shx"
+    },
+    {
+      "file": "Aaa.shx"
+    },
+    {
+      "file": "AcadEref.shx"
+    },
+    {
+      "file": "aehalf.shx"
+    },
+    {
+      "file": "AMDTSymbols.shx"
+    },
+    {
+      "file": "amgdt.shx"
+    },
+    {
+      "file": "amgdtans.shx"
+    },
+    {
+      "file": "bigfont.shx"
+    },
+    {
+      "file": "bold.shx"
+    },
+    {
+      "file": "Cass.shx"
+    },
+    {
+      "file": "ccfang.shx"
+    },
+    {
+      "file": "CDM_NC.shx"
+    },
+    {
+      "file": "Cdm.shx"
+    },
+    {
+      "file": "CHAR_FAST_FONT.shx"
+    },
+    {
+      "file": "chineset.shx"
+    },
+    {
+      "file": "Cj.shx"
+    },
+    {
+      "file": "complex.shx"
+    },
+    {
+      "file": "Dengb.ttf"
+    },
+    {
+      "file": "dim.shx"
+    },
+    {
+      "file": "extfont.shx"
+    },
+    {
+      "file": "extfont2.shx"
+    },
+    {
+      "file": "exthalf2.shx"
+    },
+    {
+      "file": "extslim2.shx"
+    },
+    {
+      "file": "Fs.shx"
+    },
+    {
+      "file": "fsshape.shx"
+    },
+    {
+      "file": "g12f13.shx"
+    },
+    {
+      "file": "g13f12d.shx"
+    },
+    {
+      "file": "g13f12w.shx"
+    },
+    {
+      "file": "gbcbig.shx"
+    },
+    {
+      "file": "gbeitc.shx"
+    },
+    {
+      "file": "gbenor.shx"
+    },
+    {
+      "file": "GBHZFS.shx"
+    },
+    {
+      "file": "GENISO.shx"
+    },
+    {
+      "file": "geniso12.shx"
+    },
+    {
+      "file": "GENLTSHP.shx"
+    },
+    {
+      "file": "GENPRESE.shx"
+    },
+    {
+      "file": "gothice.shx"
+    },
+    {
+      "file": "gothicg.shx"
+    },
+    {
+      "file": "gothici.shx"
+    },
+    {
+      "file": "greekc.shx"
+    },
+    {
+      "file": "greeks.shx"
+    },
+    {
+      "file": "green.shx"
+    },
+    {
+      "file": "hand1.shx"
+    },
+    {
+      "file": "ht.shx"
+    },
+    {
+      "file": "HZFS.SHX"
+    },
+    {
+      "file": "hztxt.shx"
+    },
+    {
+      "file": "iges1001.shx"
+    },
+    {
+      "file": "iges1002.shx"
+    },
+    {
+      "file": "iges1003.shx"
+    },
+    {
+      "file": "intecad.shx"
+    },
+    {
+      "file": "ISO.shx"
+    },
+    {
+      "file": "isocp.shx"
+    },
+    {
+      "file": "isocp2.shx"
+    },
+    {
+      "file": "isocp3.shx"
+    },
+    {
+      "file": "isoct.shx"
+    },
+    {
+      "file": "isoct2.shx"
+    },
+    {
+      "file": "isoct3.shx"
+    },
+    {
+      "file": "italic.shx"
+    },
+    {
+      "file": "italic8.shx"
+    },
+    {
+      "file": "italicc.shx"
+    },
+    {
+      "file": "italict.shx"
+    },
+    {
+      "file": "Khz.shx"
+    },
+    {
+      "file": "ltypeshp.shx"
+    },
+    {
+      "file": "monotxt.shx"
+    },
+    {
+      "file": "monotxt8.shx"
+    },
+    {
+      "file": "romanc.shx"
+    },
+    {
+      "file": "romand.shx"
+    },
+    {
+      "file": "romans.shx"
+    },
+    {
+      "file": "romant.shx"
+    },
+    {
+      "file": "scriptc.shx"
+    },
+    {
+      "file": "scripts.shx"
+    },
+    {
+      "file": "simhei.ttf"
+    },
+    {
+      "file": "simplex.shx"
+    },
+    {
+      "file": "simplex8.shx"
+    },
+    {
+      "file": "spec_bar.shx"
+    },
+    {
+      "file": "spec_sl.shx"
+    },
+    {
+      "file": "special.shx"
+    },
+    {
+      "file": "syastro.shx"
+    },
+    {
+      "file": "sybltype.shx"
+    },
+    {
+      "file": "symap.shx"
+    },
+    {
+      "file": "symath.shx"
+    },
+    {
+      "file": "symeteo.shx"
+    },
+    {
+      "file": "symusic.shx"
+    },
+    {
+      "file": "times.shx"
+    },
+    {
+      "file": "timesout.shx"
+    },
+    {
+      "file": "Tssdeng.shx"
+    },
+    {
+      "file": "txt.shx"
+    },
+    {
+      "file": "whgdtxt.shx"
+    },
+    {
+      "file": "whgtxt.shx"
+    },
+    {
+      "file": "whtgtxt.shx"
+    },
+    {
+      "file": "whtmtxt.shx"
+    }
+  ]
+}

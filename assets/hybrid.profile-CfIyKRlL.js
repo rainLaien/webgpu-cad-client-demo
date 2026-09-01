@@ -1,0 +1,1 @@
+const e={id:"hybrid",label:"Viewer + Editor",lockMode:!1,capabilities:{sketch:!0,placeLine:!0,placeText:!0,undoRedo:!0,measure:!0,objectEdit:!0,layerEdit:!0,modeToggle:!0,diagnostics:!0,partDesign:!0},priorities:{largeAssembly:!0}};export{e as HYBRID_PROFILE};

@@ -1,9 +1,9 @@
-const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/editor-module-sDEHG0Nh.js","assets/occ-bridge-_xoVwa28.js","assets/editor-module-CkWqkX0_.css"])))=>i.map(i=>d[i]);
+const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/editor-module-CTbqIS1s.js","assets/occ-bridge-80y3Kbd_.js","assets/editor-module-CI8Hlrr0.css"])))=>i.map(i=>d[i]);
 import "./__vite-browser-external-B5Qt9EMX.js";
-import { k as r, l as i, g as d, h as n, i as m, j as b, _ as u, __tla as __tla_0 } from "./editor-module-sDEHG0Nh.js";
-import { e as l, f as p, b as c, d as f, g as C, c as P, __tla as __tla_1 } from "./createApp-WSsTPVqX.js";
+import { l as r, m as i, h as d, i as m, j as n, k as b, _ as u, __tla as __tla_0 } from "./editor-module-CTbqIS1s.js";
+import { e as l, f as p, b as c, d as f, g as C, c as P, __tla as __tla_1 } from "./createApp-hsQ2-zDj.js";
 import { s as e, S as o, m as h } from "./manifestToAppProfile-BmVb9YZI.js";
-import { __tla as __tla_2 } from "./occ-bridge-_xoVwa28.js";
+import { __tla as __tla_2 } from "./occ-bridge-80y3Kbd_.js";
 import "./hybrid.profile-CfIyKRlL.js";
 Promise.all([
     (()=>{
@@ -56,8 +56,8 @@ Promise.all([
             }),
             e("sketch", "sketch", {
                 ribbonTabs: b(),
-                ribbonGroups: m(),
-                menuCommands: n(),
+                ribbonGroups: n(),
+                menuCommands: m(),
                 viewportCommandGroups: d()
             })
         ],
@@ -70,9 +70,9 @@ Promise.all([
     const { app: k } = P(a);
     k.mount("#app");
     typeof requestIdleCallback == "function" && requestIdleCallback(()=>{
-        u(()=>import("./editor-module-sDEHG0Nh.js").then(async (m)=>{
+        u(()=>import("./editor-module-CTbqIS1s.js").then(async (m)=>{
                 await m.__tla;
                 return m;
-            }).then((t)=>t.cd), __vite__mapDeps([0,1,2]));
+            }).then((t)=>t.cg), __vite__mapDeps([0,1,2]));
     });
 });

@@ -1,9 +1,9 @@
-const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/editor-module-CTbqIS1s.js","assets/occ-bridge-80y3Kbd_.js","assets/editor-module-CI8Hlrr0.css"])))=>i.map(i=>d[i]);
+const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/editor-module-CL6zRXJJ.js","assets/occ-bridge-CkpJ71Yv.js","assets/editor-module-CI8Hlrr0.css"])))=>i.map(i=>d[i]);
 import "./__vite-browser-external-B5Qt9EMX.js";
-import { l as r, m as i, h as d, i as m, j as n, k as b, _ as u, __tla as __tla_0 } from "./editor-module-CTbqIS1s.js";
-import { e as l, f as p, b as c, d as f, g as C, c as P, __tla as __tla_1 } from "./createApp-hsQ2-zDj.js";
-import { s as e, S as o, m as h } from "./manifestToAppProfile-BmVb9YZI.js";
-import { __tla as __tla_2 } from "./occ-bridge-80y3Kbd_.js";
+import { m as r, n as i, i as d, j as n, k as m, l as b, _ as u, __tla as __tla_0 } from "./editor-module-CL6zRXJJ.js";
+import { e as l, f as p, b as c, d as f, g as C, c as P, __tla as __tla_1 } from "./createApp-DaVJoDx-.js";
+import { s as e, S as o, m as k } from "./manifestToAppProfile-BmVb9YZI.js";
+import { __tla as __tla_2 } from "./occ-bridge-CkpJ71Yv.js";
 import "./hybrid.profile-CfIyKRlL.js";
 Promise.all([
     (()=>{
@@ -56,8 +56,8 @@ Promise.all([
             }),
             e("sketch", "sketch", {
                 ribbonTabs: b(),
-                ribbonGroups: n(),
-                menuCommands: m(),
+                ribbonGroups: m(),
+                menuCommands: n(),
                 viewportCommandGroups: d()
             })
         ],
@@ -65,14 +65,14 @@ Promise.all([
             showInspector: !0,
             sidebarWidth: 280
         }
-    }, a = h(s);
+    }, a = k(s);
     C(s, a.capabilities);
-    const { app: k } = P(a);
-    k.mount("#app");
+    const { app: _ } = P(a);
+    _.mount("#app");
     typeof requestIdleCallback == "function" && requestIdleCallback(()=>{
-        u(()=>import("./editor-module-CTbqIS1s.js").then(async (m)=>{
+        u(()=>import("./editor-module-CL6zRXJJ.js").then(async (m)=>{
                 await m.__tla;
                 return m;
-            }).then((t)=>t.cg), __vite__mapDeps([0,1,2]));
+            }).then((t)=>t.cU), __vite__mapDeps([0,1,2]));
     });
 });

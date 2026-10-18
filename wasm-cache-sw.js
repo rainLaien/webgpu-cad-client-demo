@@ -5,16 +5,37 @@ const cacheName = 'mcad-wasm-v1:' + new URL(self.registration.scope).pathname;
 const inFlight = new Map();
 self.addEventListener('install', event => event.waitUntil(self.skipWaiting()));
 self.addEventListener('activate', event => event.waitUntil(self.clients.claim()));
+self.addEventListener('message', event => {
+  if (event.data?.type === 'mcad-wasm-observer') event.ports[0]?.postMessage(event.source?.id);
+});
 self.addEventListener('fetch', event => {
-  const request = event.request;
+  const url = new URL(event.request.url);
+  const observer = url.searchParams.get('mcad-observer');
+  url.searchParams.delete('mcad-observer');
+  const request = new Request(url.href, event.request);
   if (request.method !== 'GET' || request.headers.has('range') || !allowed.has(request.url)) return;
+  const notify = async (phase, source) => {
+    try {
+      const client = await self.clients.get(observer || event.clientId);
+      if (client?.url.startsWith(self.registration.scope)) client.postMessage({ type: 'mcad-wasm-status', url: request.url, phase, source });
+    } catch { /* Status delivery never changes the resource response. */ }
+  };
+  const track = (response, source) => {
+    if (!response.ok || !response.body) { void notify('failed', source); return response; }
+    const headers = new Headers(response.headers);
+    headers.delete('content-length'); headers.delete('content-encoding');
+    return new Response(response.body.pipeThrough(new TransformStream({
+      flush() { return notify('initializing', source); },
+    })), { status: response.status, statusText: response.statusText, headers });
+  };
   const work = (async () => {
     let cache;
     try {
       cache = await caches.open(cacheName);
       const hit = await cache.match(request);
-      if (hit) return hit;
+      if (hit) { await notify('cache', 'cache'); return track(hit, 'cache'); }
     } catch { /* Private mode/quota restrictions must never block modeling. */ }
+    await notify('downloading', 'network');
     let pending = inFlight.get(request.url);
     if (!pending) {
       pending = (async () => {
@@ -32,7 +53,8 @@ self.addEventListener('fetch', event => {
       inFlight.set(request.url, pending);
       pending.finally(() => inFlight.delete(request.url)).catch(() => undefined);
     }
-    return (await pending).clone();
+    try { return track((await pending).clone(), 'network'); }
+    catch (error) { await notify('failed', 'network'); throw error; }
   })();
   event.respondWith(work);
 });

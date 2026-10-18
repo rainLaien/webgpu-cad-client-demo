@@ -12,8 +12,8 @@ self.addEventListener('fetch', event => {
   const url = new URL(event.request.url);
   const observer = url.searchParams.get('mcad-observer');
   url.searchParams.delete('mcad-observer');
+  if (event.request.method !== 'GET' || event.request.headers.has('range') || !allowed.has(url.href)) return;
   const request = new Request(url.href, event.request);
-  if (request.method !== 'GET' || request.headers.has('range') || !allowed.has(request.url)) return;
   const notify = async (phase, source) => {
     try {
       const client = await self.clients.get(observer || event.clientId);
